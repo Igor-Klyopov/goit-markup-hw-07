@@ -1,0 +1,113 @@
+.hero {
+  text-align: center;
+  align-items: center;
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
+  background-color: var(--dark-bg-color);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/home-page/hero-bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.feature__item {
+  @include cardNumberInline(4);
+
+  & svg {
+    text-align: center;
+  }
+}
+
+.feature__icon-wrap {
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  background-color: var(--secondary-bg-color);
+  border-radius: 4px;
+}
+
+.competence {
+  padding-bottom: 94px;
+}
+
+.competence__item {
+  @include cardNumberInline(3);
+}
+
+.competence__kind {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  font-weight: var(--font-weight-bold);
+  line-height: 1.143;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.team {
+  background-color: var(--secondary-bg-color);
+}
+
+.team__member {
+  @include cardNumberInline(4);
+  padding-bottom: 30px;
+  text-align: center;
+  background-color: var(--primary-bg-color);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.team__member-image {
+  margin-bottom: 30px;
+}
+
+.team__member-name {
+  margin-bottom: 10px;
+  font-weight: var(--font-weight-middle);
+  font-size: var(--title-font-size);
+  line-height: 1.192;
+}
+
+.team-member .paragraph {
+  margin-bottom: 16px;
+}
+
+.clients .list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients__item {
+  @include cardNumberInline(6);
+  height: 90px;
+}
+
+.clients__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  fill: var(--icon-color);
+
+  &:focus,
+  &:hover {
+    fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+    outline: none;
+  }
+}

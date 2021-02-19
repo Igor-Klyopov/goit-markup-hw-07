@@ -1,0 +1,7 @@
+.card-set-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: -1 * $card-set-card-margin;
+}

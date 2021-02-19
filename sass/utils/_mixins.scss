@@ -1,0 +1,7 @@
+//Добавляeт нужное количество карточек в строке
+@mixin cardNumberInline($card-number) {
+   flex-basis: ($container-width - 2 * $card-number * $card-set-card-margin) /
+    $card-number;
+   margin: $card-set-card-margin;
+}
+
