@@ -254,17 +254,6 @@ summary {
   /* Legacy iOS */
 }
 
-/* oi-regular - latin */
-@font-face {
-  font-family: 'Oi';
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/oi-v1-latin-regular.eot");
-  /* IE9 Compat Modes */
-  src: local(""), url("../fonts/oi-v1-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/oi-v1-latin-regular.woff2") format("woff2"), url("../fonts/oi-v1-latin-regular.woff") format("woff"), url("../fonts/oi-v1-latin-regular.ttf") format("truetype"), url("../fonts/oi-v1-latin-regular.svg#Oi") format("svg");
-  /* Legacy iOS */
-}
-
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
