@@ -784,6 +784,11 @@ img {
   border-radius: 4px;
 }
 
+.feature__subtitle {
+  text-transform: uppercase;
+  font-weight: var(--font-weight-bold);
+}
+
 .competence {
   padding-bottom: 94px;
 }
